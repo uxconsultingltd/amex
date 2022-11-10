@@ -7,37 +7,49 @@
 
   <title>AMEX</title>
 
-  <style>@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+  <style>
+  
+  @import url('https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
-    line-height: 1;
+    line-height: 100%;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    font-family: 'Chathura', sans-serif;
-    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
     max-width: 800px;
     padding: 3%;
     margin: 0 auto;
 }
 
+/* .col-one{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+} */
+
 .card-container{
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 175px;
-    font-size: 24px;
+    height: 170px;
     color: white;
     padding: 100px 30px 25px 30px ; 
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-image: url(amex.png);
+    margin-top: 4%;
+    margin-bottom: 4%;
+    /* background-image: url(amex.png); */
+    background-image: url(https://uxconsultingltd.github.io/amex/amex.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -45,41 +57,45 @@ body{
 .card__sec-code{
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
 }
 
 .card__number{
     display: flex;
     justify-content: right;
-    font-size: 75px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 400;
     font-stretch: expanded;
 }
 
 .card__details--bottom{
-    font-size:40px;
+    margin-top: 35px;
+    font-weight: 400;
 }
 
 .card__valid-thru{
-    font-size: 22px;
+    font-size: 12px;
 }
 
 .card__expiry-date-and-name{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 .card__requester-name{
-    padding-right: 100px;
+    padding-right: 80px;
 }
 
 h1{
-    font-size: 50px;
+    margin: 2% 0;
 }
 
 p{
-    font-size: 30px;
+    margin: 2% 0;
 }
-
 
 </style>
 
@@ -87,26 +103,31 @@ p{
 
 <body>
 
-    <h1>Dear {{Customer name}} test</h1>
+    <h1>Dear {{Customer name}}</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odio fuga aut est excepturi id, aspernatur unde nulla? Minus veniam nisi obcaecati rem! Nam modi illum adipisci deserunt quo repudiandae.</p>
 
+    <div class="col-one">
 
-    <div class="card-container">
+        <div class="card-container">
 
-        <div class="card__sec-code">1234</div>
-        <div class="card__number">7234 1234 1234 1234</div>
+            <div class="card__sec-code">1234</div>
+            <div class="card__number">7234 1234 1234 1234</div>
 
-        <div class="card__details--bottom">
-            <span class="card__valid-thru">Valid Thru</span>
+            <div class="card__details--bottom">
+                <span class="card__valid-thru">Valid Thru</span>
 
-            <div class="card__expiry-date-and-name">
-                <span class="card__expiry-date">08/23</span>
-                <span class="card__requester-name">John Alex Smith</span>
+                <div class="card__expiry-date-and-name">
+                    <span class="card__expiry-date">08/23</span>
+                    <span class="card__requester-name">John Alex Smith</span>
+                </div>
+
             </div>
 
         </div>
 
     </div>
+
+
 
 </body>
 </html>
