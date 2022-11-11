@@ -10,13 +10,9 @@
   <style>
   
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
-    
-    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;600&family=News+Cycle:wght@400;700&display=swap');
-   
-    @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;600&family=News+Cycle:wght@400;700&display=swap');  
+    @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap'); 
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
 
 * {
     margin: 0;
@@ -37,12 +33,6 @@ body{
     margin: 0 auto;
 }
 
-/* .col-one{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-} */
-
 .card-container{
     display: flex;
     flex-direction: column;
@@ -57,6 +47,8 @@ body{
     background-image: url(https://uxconsultingltd.github.io/amex/amex.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
 }
 
 .card__amount {
@@ -65,8 +57,7 @@ body{
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-     text-shadow: 0px 0px 3px rgb(23, 171, 212);
-    /* margin: 0 140px ; */
+    text-shadow: 0px 0px 3px rgb(23, 171, 212);
 }
 
 .hidden {
@@ -87,8 +78,7 @@ body{
     font-size: 35px;
     font-weight: 400;
     font-stretch: expanded;
-    text-shadow: 2px 2px 3px rgb(80, 75, 75);
-
+    text-shadow: 3px 3px 3px rgba(0,0,0,.5);
 }
 
 .card__details--bottom{
@@ -111,13 +101,9 @@ body{
     padding-right: 80px;
 }
 
-h1{
-    margin: 2% 0;
-}
+h1 {margin: 2% 0;}
 
-p{
-    margin: 2% 0;
-}
+p {margin: 2% 0;}
 
 </style>
 
@@ -125,33 +111,28 @@ p{
 
 <body>
 
-    <h1>Dear {{Customer name}}</h1>
+    <h1>Dear Cory,</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odio fuga aut est excepturi id, aspernatur unde nulla? Minus veniam nisi obcaecati rem! Nam modi illum adipisci deserunt quo repudiandae.</p>
 
-    <div class="col-one">
 
-        <div class="card-container">
-            <div class="card__amount">$ 10,000,000</div>
+    <div class="card-container">
+        <div class="card__amount">$ 10,000,000</div>
 
 
-            <div class="card__sec-code">1234</div>
-            <div class="card__number">3759 876643 21001</div>
+        <div class="card__sec-code">1234</div>
+        <div class="card__number">3759 876643 21001</div>
 
-            <div class="card__details--bottom">
-                <span class="card__valid-thru">Valid Thru</span>
+        <div class="card__details--bottom">
+            <span class="card__valid-thru">Valid Thru</span>
 
-                <div class="card__expiry-date-and-name">
-                    <span class="card__expiry-date">08/23</span>
-                    <span class="card__requester-name">MR JOHN SMITH</span>
-                </div>
-
+            <div class="card__expiry-date-and-name">
+                <span class="card__expiry-date">08/23</span>
+                <span class="card__requester-name">MR CORY CALAVAN</span>
             </div>
 
         </div>
 
     </div>
-
-
 
 </body>
 </html>
